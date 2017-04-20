@@ -1,0 +1,13 @@
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  z-index: 10;
+  perspective: 200;
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+  }
+}

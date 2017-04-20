@@ -1,0 +1,21 @@
+.social {
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  z-index: 10;
+
+  &__link {
+    display: block;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}

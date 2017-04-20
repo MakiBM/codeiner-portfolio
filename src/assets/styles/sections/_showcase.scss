@@ -1,0 +1,56 @@
+.showcase {
+
+  &__projects {
+    position: relative;
+    max-width: 20vw;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+
+  &__project {
+    position: absolute;
+    width: 60%;
+    box-shadow: 0 3rem 5rem 0 rgba(0,0,0, 0.5);
+    // background: linear-gradient(135deg, #fff 0, #000 100%);
+    transform: rotate(90deg);
+    background: #000;
+    pointer-events: all;
+
+    > * {
+      display: block;
+      height: 0;
+      padding-bottom: 170%;
+      background-size: cover;
+      background-position: center;
+      // opacity: 0.9;
+      transform: translateZ(0);
+      // transition: opacity 0.2s $easing-primary;
+      border: 1px solid rgba(255,255,255, 0.2);
+
+      &:hover {
+        // opacity: 1;
+      }
+    }
+
+    &--1 {
+      position: static;
+      width: 100%;
+    }
+
+    &--2 {
+      left: 80%;
+      top: -15%;
+      opacity: 0;
+    }
+
+    &--3 {
+      left: 80%;
+      top: 90%;
+    }
+
+    &--4 {
+      left: -50%;
+      top: 15%;
+    }
+  }
+}

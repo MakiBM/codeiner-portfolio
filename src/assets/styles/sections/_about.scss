@@ -1,0 +1,10 @@
+.about {
+
+  &__fractal canvas {
+    transform: scale(0.2) translateZ(0);
+  }
+
+  .section__title {
+    margin-top: 10rem;
+  }
+}

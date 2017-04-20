@@ -1,0 +1,12 @@
+{
+  "extends": "google",
+  "rules": {
+    "max-len": 0
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "google": true
+  }
+}

@@ -1,0 +1,44 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  min-width: 30rem;
+  padding: 3rem 4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  box-shadow: 0 3rem 5rem 0 rgba(0,0,0, 0.5);
+  transition: color 0.3s $easing-primary;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:before {
+    z-index: -2;
+    // background: linear-gradient(135deg, $accent-primary 0, $accent-primary-darken 100%) $accent-primary;
+    background-color: black;
+    opacity: 1;
+  }
+
+  &:after {
+    z-index: -1;
+    // background: linear-gradient(135deg, $accent-secondary 0, $accent-secondary-darken 100%) $accent-secondary;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s $easing-primary;
+  }
+
+  &:hover {
+    color: #000;
+
+    &:after {
+      opacity: 1;
+    }
+  }
+}
